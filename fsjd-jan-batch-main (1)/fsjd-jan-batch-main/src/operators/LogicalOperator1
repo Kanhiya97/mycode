@@ -1,0 +1,10 @@
+public class operators.LogicalOperator1 {
+    public static void main(String[] args) {
+        // &&, &, ||, |, !, ^ 
+        //AND, OR, NOT, XOR --> these keywords are not there in java
+        // AND: Laptop : 16 GB && I7 processor && SSD 512 GB && generation : 12th
+        // OR: Laptop : 16 GB || I7 processor || SSD 512 GB || generation : 12th
+        // XOR: TRUE ^ FALSE = TRUE
+        
+    }
+}

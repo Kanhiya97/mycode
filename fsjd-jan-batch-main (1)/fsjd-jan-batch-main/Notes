@@ -1,0 +1,417 @@
+RAM is used to execute/run the applications
+RAM is temporary storage. We store program instructions to be given to the machine
+To store some temporary data/ program data
+Domain Name Server [DNS] --> domain --> IP address --> Google Server
+Name[Variable] --- > Memory address ----> RAM:
+
+value 100  to be stored in the RAM.
+
+Decimal - binary --> Memory Address --> RAM
+
+# Variable : It is name given to a memory location address.
+# use of variable : it is used to store data or access the data which is already stored.
+
+int mobileNumber = 123456;
+
+- 123456 is the value or data
+- mobileNumber is the variable
+- int : it is data type
+
+                    123456
+mobileNumber ---> memory address - > 
+
+# types of data : number , character, boolean
+number :  
+    - decimal or floating : 10.5
+    - whole number : 10, 11 -, 0, -12
+character : A, &, H, s
+boolean : true, false
+
+
+decimal number 10 ---> binary 1010 -- > it will be stored in the memory.
+character ---> ASCII/UNICODE number --> binary
+A ---> 65 --> binary
+true --> 1 -->
+false --> 0 --> 
+
+
+# data types in java
+    - specifier what type of data we are putting in the variable
+    - it also specifies the memory requirement to put the value
+    - it specifies range of allowed values.
+    - differnetn datatypes available : byte, short, int, long, float, double, char, boolean
+
+8 bit --> 1 byte
+16 bits - > 2 bytes
+
+    123 = 100 + 20 + 3 = 10 * 10 + 2 * 10 + 3 * 10^0
+                        = 1 * 10 ^2 + 2 * 10^1 + 3 * 10^0
+
+    0 1 1 1 1 1 1 1 ---> 1 * 2^6 + 1*2^5 + 1*2^4 + 1 * 2^3 + 1*2^2 + 1*2^1 +  1*2^0
+                        = 64 + 32 + 16 + 8 + 4 + 2 +1
+                        = 127
+
+    MSB : Most significant bit: to represent sign the number
+    positive : 0
+    negaitve : 1
+
+    Whole  number:
+    byte : 1 bytes = 127
+    short : 2 bytes = 32767
+    int :   4 bytes = 24147
+    long : 8 bytes = 
+
+    floating number
+    float : 4 bytes
+    double : 8 bytes
+
+
+    int a  = 8; // 4 bytes
+
+    short b = 100; // 2 bytes : 32767
+
+    long 
+
+
+
+    byte, short, int, long, float, double, char
+
+    Arithmetic operators : +, -, *, /, %
+
+    operand1 operator operand2      =  result
+
+    byte,short, int, char (+,-, *,/, %) byte,short, int, char => int
+    byte, short, int, char, long (+,-, *,/, %) byte,short, int, char, long => long
+    byte,short, int, char, long,float (+,-, *,/, %) byte,short, int, char, long,float => float
+    byte,short,int,char,long,float, double (+,-, *,/, %) byte,short, int, char, long,float,doble => double
+
+
+    int
+    long
+    float
+    double
+
+# arithmetic operators are not allowed for boolean type
+# If we divide or take modulo of byte, short, int long, char by zero we get ArithmeticException divide by zero.
+# if we divide float or double by zero we get Infinity as a output
+# if we modulo a float or double by zero we get NaN[Not A Number] as a output
+#Expression evaluation :
+    - Expression evaluation will be from left to right
+    - It will follow standard BODMAS [ Brackets of Division Multiplication Add, Sub]
+
+# String concatenation operator +
+ + operator will perform mathematical addition when both the operands are of type number
+ + operator will perform string concatenation  when one the operands are of type String
+
+ # Assignment Operator =
+
+
+
+
+ # Control statements:
+    - theses helps us in control the flow of execution of the program
+  1. conditional statements : it will help us to either skip the execution of execute the lines
+    1. if- else
+        - syntax : if (condition) {
+                    //statements
+                 } else {
+                    //statements
+                 }
+        - if else both are keywords
+        - condition must be of type boolean
+             - direct value either true or false
+             - expression which results into boolean value e.g. 5 > 4---> true
+             - variable of type boolean
+             - function call which returns boolean value
+
+        - if condition is true then only of block will be executed
+        - else block will be executed when condition is false
+        - either if or else will be executed not both of them
+        - there should not be any independent statements in between if and else
+     - when to avoid if-else?
+        - if the number of comparisons are more than 3
+
+    2. switch
+
+  2. looping statements: it will repeat the execution of selected
+    1. for loop: no. of iterations are known in advance
+    2. while loop: no. of iterations are not known in advance
+    3. do while: no. of iterations are not known in advance but code is expected to execute at least once
+
+  3. transfer statements : it will transfer the control from one locatin to another location inside the program
+    1. break
+    2. continue
+    3. return
+
+ // transfer statements or jump statements: break, continue, return[keywords]
+        // control will be transferred from one location to another
+
+        // break :
+            //  it is keyword
+            // it must be used only in switch and loops otherwise we get CTE
+            // with the help of break, control will be transferred out  of the switch or loop
+
+
+
+        // continue :
+            // it is a keyword
+            //  it must be used only in the loops otherwise we get CTE
+            // with the help of continue, control will be transferred out  of the loop
+
+        //return :
+            // it is a keyword
+            // it must be used inside the method but must be the last statement in the method
+            // with the help of return, control will be transferred out of the method
+
+
+
+# JVM architecture
+
+JDL, JRE, JVM
+1. Write  java program
+2. Compile java program
+3. Byte code [.class]
+4. Class loader will load the class in the memory
+5. ByteCode verifier to verify the byte code
+6. Memory components
+    - heap
+    - java stack memory
+    - Class or Method memory area
+    - Native method area
+    - Native method stack area
+    - PC register
+ - Native method Interface
+ - Native method Library
+ - Java execution engine
+ - Intpreter
+ - JIT
+
+
+
+
+
+Class and Object:
+
+- Class : what, why, how to create class
+    - it is template, design, blueprint to create objects
+    - class word comes from Classification[Grouping, Categorization]
+    - We need class first to create objects
+    - With the help single class we can create any number of objects.
+    - Class structure, design will be stored in Class or Method memory.
+    - analogy of class : building floor
+    -syntax :
+            class ClassName {
+                //variables
+                //methods
+                //constructor
+                //blocks
+                //nested classes
+            }
+- Object : what, why, how to create object and use that
+    - It is an instance of a class
+    - It is an memory space allocated for class type data
+    - Instance is any memory space which is allocated at runtime.
+    - Every object is an instance but vice versa need to be true.
+    - Object is an memory allocation for class type data.
+    - Memory allocation is nothing but putting some data at runtime.
+    - Objects are stored in HEAP memory area.
+    - We need class first to create object.
+    - analogy: actual building construction
+    - Object occupies space/memory
+    - why ? wee need objects to represent real world physical/logical entities in the program
+    - How to create an Object?
+
+        Class Student {
+            int rollNumber;
+            String name;
+
+            void registerStudent(){}
+            void updateStudentDetails(){}
+            void deleteStudent(){}
+
+            public static void main(String args[]){
+
+                int variable = 40;
+                //date_type  referenceVariable = new data_type();
+                Student student = new Student();
+                //
+
+            }
+        }
+# Class components
+    - components which are defined inside the class.
+
+    class Demo {
+        //1. variable - [ Local, Instance, static]
+        //2. method - [instance method, static method]
+        //3. constructor- [ default, zero parameterized, parameterized]
+        //4. blocks - [instance block, static block ]
+        //5. nested class - [ static nested class, inner class, local inner class, Anonymous clas]
+    }
+    // 14 components
+    // what, why, types, how to use
+
+
+# variable :
+    - why to use it ?
+        to store the data or access the data which is already there in the memory [at runtime]
+    - what is it?
+        - it is a name given to a memory location address so that we can access the data from the memory easily
+    - how to use it?
+        - int variable = 30;
+        - SOP(variable);
+
+# Local variable:
+- what is a local variable ?
+    - It is a variable which is defined inside the method, constructor, blocks, method parameter, constructor param
+
+- What is the use of local variable?
+    - we use local variables to store temporary calculations, to store some intermediate results.
+
+- which memory area local variables are stored?
+    - Local variables are stored inside the Stack memory area.
+
+- Local variables are local to that particular method, constructor, block meaning local variables cannot be accessed outside.
+- It is compulsory to provide some initial for the local variable before they used.
+- Local variables will get the memory when the method, constructor, block is executed.
+- Local variables will be deleted when the method, constructor, block execution is complete.
+
+
+# Instance variable:
+- what is an instance variable ?
+    - It is a variable which is defined at class and outside of all the method, constructor, blocks, nested classes
+
+- What is the use of instance variable?
+    - we use instance variables to store data which is specific to an object[instance]
+
+- which memory area instance variables are stored?
+    - Instance variables are stored inside the HEAP memory area.
+
+- It is not compulsory to provide some initial value for the instance variable before they used as they get the default value.
+- Instance variables will get the memory when an object is created.
+- Instance variables will be deleted when the object is deleted/destroyed.
+
+- instance means object specific
+
+# Static variable:
+- what is a static variable ?
+    - It is a variable which is defined at class level with static keyword and outside of all the method, constructor, blocks, nested classes
+
+- What is the use of static variable?
+    - we use static variables to store data which is common for all the objects[instance]
+
+- which memory area static variables are stored?
+    - Static variables are stored inside the CLASS or METHOD memory area.
+
+- It is not compulsory to provide some initial value for the static variable before they used as they get the default value.
+- Static variables will get the memory when an class is loaded in the memory.
+- Static variables will be deleted when the class is unloaded from the memory
+- Static variables get the memory only once at the time class loading.
+- static means it is common for all the objects.
+- static variable value will not change from one object to another.
+
+# instance vs static
+    class Student {
+        int rollNumber;
+        String name;
+        int yearOfPassing;
+        String address;
+        String branch;
+        static String collegeName = "NIT Patna";
+
+        void addStudent(){}
+        void updateStudent(){}
+        void deleteStudent(){}
+        void readStudent(){}
+    }
+
+    // we have created an object of type student
+    Stduent student1 = new Student(1,"abc", 2023,"Pune","ENTC");
+    Stduent student2 = new Student(2,"xyz", 2022,"Mumbai","CS");
+    Stduent student3 = new Student(3,"xyz", 2022,"Mumbai","CS");
+    Stduent student4 = new Student(4,"xyz", 2022,"Mumbai","CS");
+    Stduent student5 = new Student(5,"xyz", 2022,"Mumbai","CS");
+    Stduent student6 = new Student(6,"xyz", 2022,"Mumbai","CS");
+    Stduent student7 = new Student(7,"xyz", 2022,"Mumbai","CS");
+    Stduent student8 = new Student(8,"xyz", 2022,"Mumbai","CS");
+
+
+#2. Methods
+Q.1 what is a method in java?
+Ans. : It is a task/routine/set of instructions/ algorithm
+      - group of statements which are enclosed inside the curly braces which has name,
+        which might have input parameters and may return some output
+        Syntax : dataType nameOfMethod(input){
+                    //statements
+                }
+           Example: void displayCompanyName(){
+                        System.out.println("Company name : Google");
+                    }
+
+Q.2 Why do need a method in java?
+Ans. :
+    1. with the methods code is reduced.
+    2. Code duplication can be avoided
+    3. to represent some task in the programming
+
+Q.3 What are the different type of methods available in java?
+Ans.
+    1. instance method
+    2. static methods
+
+Q.4 What is an instance method?
+Ans.
+    It is a method which defined without static modifier
+    Example:            void displayCompanyName(){
+                            System.out.println("Company name : Google");
+                        }
+
+Q.5 why do need instance method?
+Ans. To represent object specific behaviour/task
+
+Q.6 how to access an instance method?
+Ans. We access instance method with the help of reference variable
+
+    method1 : no input - no output
+    method4 : input - output
+    method2 : input - no output
+    method3 : no input - output
+
+Q.7 What is an static method?
+Q.8 why do need static method?
+Q.9 how to access a static method?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
